@@ -22,7 +22,7 @@ app.get("/home",(req,res)=>{
 });
 
 const start=async()=>{
-    const connectionDb=await mongoose.connect("mongodb+srv://Dwarkesh:Dwarkesh33@cluster0.jgk2bnf.mongodb.net/?appName=Cluster0");
+    const connectionDb=await mongoose.connect(process.env.MONGODB);
     console.log(`MONGO CONNECTED DB HOST: ${connectionDb.connection.host}`);
 
     server.listen(app.get("port"),()=>{

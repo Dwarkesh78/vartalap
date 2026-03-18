@@ -66,3 +66,70 @@ html, body, #root {
     height: 70vh;
     width: auto;
 }   
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.meetContainer {
+    display: flex;
+    height: calc(100vh - 70px);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Left side */
+.leftPanel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftPanel h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Input + button row */
+.leftPanel > div > div {
+    display: flex;
+    gap: 10px;
+}
+
+/* Right side */
+.rightPanel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image styling */
+.rightPanel img {
+    width: 80%;
+    max-width: 500px;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .meetContainer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .rightPanel {
+        margin-top: 30px;
+    }
+
+    .rightPanel img {
+        width: 100%;
+    }
+}
