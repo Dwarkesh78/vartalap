@@ -5,10 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/app.js",
-    "start": "node src/app.js"
-  },
-  "engines": {
-    "node": "22.x"
+    "start": "node src/app.js",
+    "prod": "mp2 src/app.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,12 +14,11 @@
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cors": "^2.8.6",
+    "crypto": "^1.0.1",
     "express": "^5.2.1",
     "http-status": "^2.1.0",
     "mongoose": "^9.1.6",
+    "nodemon": "^3.1.11",
     "socket.io": "^4.8.3"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.11"
   }
 }
